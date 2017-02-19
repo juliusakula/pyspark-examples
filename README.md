@@ -12,6 +12,23 @@
     cd spark-2.1.0-bin-hadoop2.7
     ls examples/src/main/python/
 
+### list ML, SQL examples
+
+    ls examples/src/main/python/ml/
+
 ### Execute examples
 
     ./bin/spark-submit examples/src/main/python/<example>.py 
+
+### Alternative execute examples (from pyspark shell)
+
+     $ ./bin/pyspark
+     ...
+     Welcome to
+       ____              __
+      / __/__  ___ _____/ /__
+     _\ \/ _ \/ _ `/ __/  '_/
+    /__ / .__/\_,_/_/ /_/\_\   version 2.1.0
+       /_/
+     ...
+     >>> execfile("examples/src/main/python/ml/sql_transformer.py")
